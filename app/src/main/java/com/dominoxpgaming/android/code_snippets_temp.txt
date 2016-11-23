@@ -1,0 +1,102 @@
+//Marker startMarker = new Marker(map);
+        //startMarker.setPosition(startPoint);
+        //startMarker.setAnchor(Marker.ANCHOR_CENTER, Marker.ANCHOR_BOTTOM);
+        //map.getOverlays().add(startMarker);
+
+        //map.invalidate();
+
+        //startMarker.setIcon(getResources().getDrawable(R.drawable.center));
+        //startMarker.setTitle("Start point");
+
+        //map.invalidate();
+
+
+        /*
+        //Scale Bar Overlay ------------------------------------------------------------------------
+        this.mScaleBarOverlay = new ScaleBarOverlay(map);
+
+        //Enable Overlay functions
+        this.mScaleBarOverlay.setCentred(true);
+        //this.mScaleBarOverlay.setScaleBarOffset(0,0);
+        //play around with these values to get the location on screen in the right place for your applicatio
+
+        this.mScaleBarOverlay.setScaleBarOffset((int) ConvertUnits.convertDpToPixel(180f,this),
+                                                (int) ConvertUnits.convertDpToPixel(20f,this));
+
+        //Add Overlay to display
+        map.getOverlays().add(this.mScaleBarOverlay);
+        */
+
+
+
+
+        /*
+        //your items
+        ArrayList<OverlayItem> items = new ArrayList<OverlayItem>();
+        items.add(new OverlayItem("Title", "Description", new GeoPoint(0.0d,0.0d))); // Lat/Lon decimal degrees
+
+        //the overlay
+        ItemizedOverlayWithFocus<OverlayItem> mOverlay = new ItemizedOverlayWithFocus<OverlayItem>(items,
+                new ItemizedIconOverlay.OnItemGestureListener<OverlayItem>() {
+                    @Override
+                    public boolean onItemSingleTapUp(final int index, final OverlayItem item) {
+                        //do something
+                        return true;
+                    }
+                    @Override
+                    public boolean onItemLongPress(final int index, final OverlayItem item) {
+                        return false;
+                    }
+                });
+
+
+        mOverlay.setFocusItemsOnTap(true);
+
+        map.getOverlays().add(mOverlay);
+
+        */
+
+        /*Runnable r = new Runnable() {
+            @Override
+            public void run() {
+                gridgenerator();
+            }
+        };
+        */
+
+
+
+
+
+        //Thread thread = new Thread(r);
+                //        thread.start();
+                /*
+                private class LongOperation extends AsyncTask<String, Void, String> {
+
+                @Override
+                protected String doInBackground(String... params) {
+                    for (int i = 0; i < 5; i++) {
+                        try {
+                            Thread.sleep(1000);
+                        } catch (InterruptedException e) {
+                            Thread.interrupted();
+                        }
+                    }
+                    return "Executed";
+                }
+
+                @Override
+                protected void onPostExecute(String result) {
+                    TextView txt = (TextView) findViewById(R.id.output);
+                    txt.setText("Executed"); // txt.setText(result);
+                    // might want to change "executed" for the returned string passed
+                    // into onPostExecute() but that is upto you
+                }
+
+                @Override
+                protected void onPreExecute() {}
+
+                @Override
+                protected void onProgressUpdate(Void... values) {}
+            }
+                 */

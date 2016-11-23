@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Android</string>
+    <string name="log_in_text">Log in</string>
+    <string name="missing_location_provider">Fehlende Ortsbestimmung</string>
+    <string name="missing_location_provider_text">Ihre Ortsbestimmung ist momentan deaktivert! Um die OutGame Karte benutzen zu können, aktivieren sie bitte GPS in den Einstellungen</string>
+    <string name="settings">Einstellungen</string>
+    <string name="or_switch_perspective">Oder ändern sie die Perspektive zu</string>
+    <string name="mainmenu">Hauptmenü</string>
+    <string name="ingame">Ingame</string>
+</resources>

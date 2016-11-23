@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <org.osmdroid.views.MapView
+        android:id="@+id/map"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <Button
+        android:text=""
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/switch_compass"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:color="#00000000"
+        android:background="#00000000"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/overlayLayout">
+
+        <fragment
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:name="com.dominoxpgaming.android.map_status_2"
+            android:id="@+id/map_status_2"
+            tools:layout="@layout/fragment_map_status_2" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
