@@ -51,9 +51,7 @@ public class MainMapView extends AppCompatActivity {
 
     private MapView map;
     private IMapController mapController;
-    private GpsMyLocationProvider mgps;
     private CompassOverlay mCompassOverlay;
-    private MyLocationNewOverlay mLocationOverlay;
 
     private Boolean followLocation = true;
     private Boolean rotateWithCompass = false;
