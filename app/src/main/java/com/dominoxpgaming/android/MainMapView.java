@@ -7,15 +7,12 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
 import android.content.pm.PackageManager;
-import android.graphics.Canvas;
 import android.location.Location;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.Settings;
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
@@ -23,7 +20,6 @@ import android.widget.ImageButton;
 
 import com.dominoxpgaming.android.MapContent.MapContent;
 import com.dominoxpgaming.android.MapContent.MapLocationProvider;
-import com.dominoxpgaming.android.mutilitys.ConvertUnits;
 import com.dominoxpgaming.android.mutilitys.PermissionCheck;
 
 import org.osmdroid.api.IMapController;
@@ -31,29 +27,20 @@ import org.osmdroid.tileprovider.constants.OpenStreetMapTileProviderConstants;
 import org.osmdroid.tileprovider.tilesource.TileSourceFactory;
 import org.osmdroid.util.GeoPoint;
 import org.osmdroid.views.MapView;
-import org.osmdroid.views.overlay.Marker;
-import org.osmdroid.views.overlay.Overlay;
-import org.osmdroid.views.overlay.OverlayItem;
 import org.osmdroid.views.overlay.compass.CompassOverlay;
 import org.osmdroid.views.overlay.compass.IOrientationProvider;
 import org.osmdroid.views.overlay.compass.InternalCompassOrientationProvider;
-import org.osmdroid.views.overlay.mylocation.GpsMyLocationProvider;
-import org.osmdroid.views.overlay.mylocation.MyLocationNewOverlay;
 
 import java.io.File;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
-
 
 public class MainMapView extends AppCompatActivity {
     private final String tag = "MainMapView";
 
     private MapView map;
     private IMapController mapController;
-    private GpsMyLocationProvider mgps;
     private CompassOverlay mCompassOverlay;
-    private MyLocationNewOverlay mLocationOverlay;
 
     private Boolean followLocation = true;
     private Boolean rotateWithCompass = false;
